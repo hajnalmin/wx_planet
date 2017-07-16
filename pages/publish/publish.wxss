@@ -1,0 +1,59 @@
+.wrap{
+    background: #ffffff;
+}
+/*top样式*/
+.top{
+    display: flex;
+    text-align: center;
+   height: 88rpx;
+   line-height: 88rpx;
+}
+.topLeft{
+    flex: 1;
+    width: 50%;
+}
+ .topRight{
+    flex: 1;
+    width: 50%;
+ }
+
+.middleline{
+    margin-top: 10rpx;
+    border: 1px solid #e5e5e5;
+    height: 62rpx;
+}
+
+.middleview{
+    height: 14rpx;
+    background: #efeff4;
+}
+
+.cartbox,.areabox{
+    text-align: center;
+}
+.conitem{
+    height: 86rpx;
+    line-height: 86rpx;
+    border-bottom: 1px solid #e5e5e5;
+}
+.topimg{
+    z-index: 100;
+    position: absolute;
+    width: 34rpx;
+    height: 20rpx;
+    margin:40rpx 20rpx 40rpx 0;
+    transition: All 0.4s ease; 
+    -webkit-transition: All 0.4s ease;
+}
+.topimg1{
+     left:40%;
+}
+.topimg2{
+     right:5%;
+}
+.rotateLeft{
+     transform: rotate(180deg); /*180°旋转图片。*/
+}
+.rotateRight{
+    transform: rotate(180deg); /*180°旋转图片。*/
+}

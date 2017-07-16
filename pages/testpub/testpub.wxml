@@ -1,0 +1,24 @@
+<view class="phone_one" bindtap="clickPerson">
+ <view class="phone_personal">{{firstPerson}}</view>
+ <image src="../images/arrowup.png" class="personal_image {{selectArea ? 'rotateRight' :''}}">
+ </image> 
+ </view>
+  
+<view class="person_box">
+  <view class="phone_select" hidden="{{selectPerson}}">
+  <view class="select_one" bindtap="mySelect" data-me="你好">你好</view>
+  <view class="select_one" bindtap="mySelect" data-me="他好">他好</view>
+  <view class="select_one" bindtap="mySelect" data-me="大家好">大家好</view>
+ </view>
+
+<!--客服消息开始-->
+ <view>
+ <contact-button 
+  type="default-light" 
+  size="20"
+  session-from="weapp"
+>
+</contact-button>
+ </view>
+ <!--客服消息结束-->
+ </view>

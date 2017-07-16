@@ -1,0 +1,36 @@
+<view class="wrap">
+    <!--top开始-->
+    <view class="top">
+        <view class="topLeft" bindtap="clickCart">
+            <text>{{firsrCart}}</text>
+            <image src="{{selectCart ? '../images/arrowup.png' : '../images/arrowdown.png'}}" class="topimg topimg1 "></image>
+        </view>
+        <view class="middleline"></view>
+        <view class="topRight" bindtap="clickArea">
+            <text>{{firsrArea}}</text>
+            <image src="{{selectArea ? '../images/arrowup.png' : '../images/arrowdown.png'}}" 
+            class="topimg topimg2"></image>
+        </view>
+    </view>
+    <!--top结束-->
+    <view class="middleview"></view>
+    <!--con开始,默认展示发布类目的模板-->
+    <view class="cartbox" wx:if="{{showCart}}">
+        <view class="cart_select" hidden="{{cartChoice}}"></view>
+        <view class="conitem" bindtap="cartSelect" data-cart="商铺转租">商铺转租</view>
+        <view class="conitem" bindtap="cartSelect" data-cart="房屋出租">房屋出租</view>
+        <view class="conitem" bindtap="cartSelect" data-cart="招聘">招聘</view>
+    </view>
+
+
+    <!--点击发布区域后，展示发布区域的模板-->
+    <view class="areabox" wx:if="{{showArea}}">
+        <view class="area_select" hidden="{{areaChoice}}"></view>
+        <view class="conitem" bindtap="areaSelect" data-area="海淀区">海淀区</view>
+        <view class="conitem" bindtap="areaSelect" data-area="昌平区">昌平区</view>
+        <view class="conitem" bindtap="areaSelect" data-area="大兴区">大兴区</view>
+    </view>
+
+    <!--con结束-->
+
+</view>
